@@ -82,7 +82,7 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
             Glide.with(context)
                     .load(tweet.user.profileImageUrl)
                     .apply(new RequestOptions()
-                            .transform(new RoundedCornersTransformation(radius, margin)))
+                        .transform(new RoundedCornersTransformation(radius, margin)))
                     .into(ivProfileImage);
             tvTimestamp.setText(tweet.getFormattedTimestamp(tweet));
         }
